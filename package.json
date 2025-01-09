@@ -1,0 +1,26 @@
+{
+  "name": "learnnodejs",
+  "version": "1.0.0",
+  "description": "tu hoc node js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Limito9x/Test.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Le Cong Thuan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Limito9x/Test/issues"
+  },
+  "homepage": "https://github.com/Limito9x/Test#readme",
+  "dependencies": {
+    "express": "4.18.2"
+  }
+}

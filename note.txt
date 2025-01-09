@@ -1,0 +1,20 @@
+-Tham khao:
+    https://drive.google.com/file/d/19Tz3obQxsJ9yVk_NS1h_JNIxWZDWv1Sd/view
+
+- Git: Cong cu quan ly code, cac phien ban cua code, ho tro teamwork,...
+    Da tao repo tren github,..
+    Clone repo ve may
+    Push:
+        git add file (git add . //de them tat ca file)
+        git commit -m "..." //chu thich
+        git push origin main/master //day code
+    Tao file .gitignore loai bo cac file hoac folder khong can thiet khi push
+
+- NPM (Node package manager): Cong cu ho tro quan ly, cai dat cac thu vien, thuc hien chay script,...
+    Tao file package.json: npm init
+    Cai dat thu vien: npm install <ten thu vien>. 
+        VD:npm install express 
+        hoac de cai dat express phien ban cu the: npm i --save-exact express@4.18.2
+        sau khi thuc hien lenh se tao folder node_modules (folder nay khong can thiet de day code len git) va package-lock.json
+    De chay script nhanh chong thay vi thuc hien cac lenh nhu "node server.js" ta se dung lenh: npm run <ten script>
+        VD: npm run start //Lenh nay se thuc hien script start trong package.json
