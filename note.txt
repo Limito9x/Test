@@ -18,3 +18,9 @@
         sau khi thuc hien lenh se tao folder node_modules (folder nay khong can thiet de day code len git) va package-lock.json
     De chay script nhanh chong thay vi thuc hien cac lenh nhu "node server.js" ta se dung lenh: npm run <ten script>
         VD: npm run start //Lenh nay se thuc hien script start trong package.json
+    Neu co thay doi gi ve dia chi file server.js, ta se sua lai phan script --> VD: "start": "node src/server.js"
+
+- EJS (Embedded Javascript): ho tro nhung js vao html, render view de dang (co the hieu la lap trinh giao dien)
+    Can import thu vien path truoc: const path = require('path')
+    app.get('views', path.join(__dirname,'<folder name>)): thu muc chua cac code ejs de render 
+    app.get('view engine', '<engine name>'): lua chon cong cu de dich code (cu the la ejs)
