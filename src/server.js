@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path')
+require('dotenv').config()
 const app = express()
-const port = 3000
+const port = process.env.PORT
+const hostname = process.env.HOST_NAME
 
 app.use(express.static(path.join(__dirname, 'tempfolder'))) //Cau hinh thu muc tinh
 app.set('views', path.join(__dirname,'view')) // Tao template ben trong thu muc view (src/view)
@@ -15,6 +17,6 @@ app.get('/ejstest', (req, res) => {
 })
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+app.listen(port,hostname, () => {
+  console.log(`Example app listening on port ${port} ${hostname}`)
 })
