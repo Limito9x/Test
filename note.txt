@@ -22,5 +22,12 @@
 
 - EJS (Embedded Javascript): ho tro nhung js vao html, render view de dang (co the hieu la lap trinh giao dien)
     Can import thu vien path truoc: const path = require('path')
-    app.get('views', path.join(__dirname,'<folder name>)): thu muc chua cac code ejs de render 
-    app.get('view engine', '<engine name>'): lua chon cong cu de dich code (cu the la ejs)
+    app.set('views', path.join(__dirname,'<folder name>)): thu muc chua cac code ejs de render 
+    app.set('view engine', '<engine name>'): lua chon cong cu de dich code (cu the la ejs)
+
+- Nodemon la cong cu ho tro lap trinh giup cap nhat server nhanh chong khi co thay doi ma khong can chay lai 
+
+***Note:    
+    - Phan biet Dependencies va DevDependencies:
+    Dependencies la cac package ma sp phu thuoc vao khi chay
+    DevDependencies la cac package ho tro cho lap trinh vien khi code, ko co no sp van on dinh
