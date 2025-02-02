@@ -1,0 +1,11 @@
+v4: MVC: Models - Controllers - Views
+    Views: san pham nhin duoc o goc nhin khach hang
+    Models: la tap hop nhung bo phan co chuc nang rieng biet nhat dinh
+    Controllers: chiu trach nhiem dieu huong du lieu, yeu cau hay tuong tac voi model
+v5: Tim hieu to chuc thu muc
+    Khai bao them cac thu muc de luu tru cac file muc dich khac nhau
+        migration: Cau hinh
+        seeder: data fake
+        config: viewengine
+    Tach cac route ra de de quan ly, tao thu muc route va web.js ben trong, khong ghi cac route vao file server.js
+    

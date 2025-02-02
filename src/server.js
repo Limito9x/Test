@@ -1,20 +1,15 @@
-const express = require('express')
-const path = require('path')
 require('dotenv').config()
+const express = require('express')
+const configViewEngine = require('./config/viewEngine')
+const webrouter = require('./route/web')
+
 const app = express()
 const port = process.env.PORT
 const hostname = process.env.HOST_NAME
 
-app.use(express.static(path.join(__dirname, 'public'))) //Cau hinh thu muc tinh
-app.set('views', path.join(__dirname, 'view')) // Tao template ben trong thu muc view (src/view)
-app.set('view engine', 'ejs')
 
-app.get('/', (req, res) => {
-  res.send('Hello World! I am Thuan')
-})
-app.get('/ejstest', (req, res) => {
-  res.render('sample.ejs')
-})
+configViewEngine(app);
+app.use('/',webrouter)
 
 
 app.listen(port, hostname, () => {

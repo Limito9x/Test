@@ -31,3 +31,7 @@
     - Phan biet Dependencies va DevDependencies:
     Dependencies la cac package ma sp phu thuoc vao khi chay
     DevDependencies la cac package ho tro cho lap trinh vien khi code, ko co no sp van on dinh
+    - Ve path.join:
+    Ham nay se tra ve thu muc khi ta lien ket giua thu muc co dinh tai noi chuong trinh thuc thi voi mot thu muc con nam ben trong
+    Vd: O thu muc src/config co file js chua dong code 
+    path.join('./src', 'public') -> Khi server import file nay thi se thuc hien ket noi
