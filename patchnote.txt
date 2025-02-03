@@ -8,4 +8,4 @@ v5: Tim hieu to chuc thu muc
         seeder: data fake
         config: viewengine
     Tach cac route ra de de quan ly, tao thu muc route va web.js ben trong, khong ghi cac route vao file server.js
-    
+v6: Dinh nghia controller
